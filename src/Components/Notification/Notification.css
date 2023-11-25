@@ -1,0 +1,102 @@
+.appointment-card{
+    background-color: rgba(72,142,247,1);
+    color: white;
+    border: 2px solid black;
+    width:100%;
+    margin-top:80px;
+    font-size:12px;
+    position: static;
+}
+
+.appointment-card .appointment-card__content{
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+
+}
+
+.appointment-card .appointment-card__title{
+  font-size:16px;
+  margin-bottom: 10px;
+}
+
+.appointment-card .appointment-card__message{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px;
+    margin-bottom: 10px;
+}
+
+.name_tag { 
+    right: 80px;
+    top: 10px;
+    position: absolute;
+}
+
+.appointment-card .appointment-card__message li{
+    min-width: 250px;
+}
+
+.appointment-card > .close {
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    padding: 2px 5px;
+    line-height: 20px;
+    right: -10px;
+    top: -10px;
+    font-size: 24px;
+    background: #ffffff;
+    border-radius: 18px;
+    border: 1px solid #cfcece;
+    width:30px;
+    height:30px;
+    color: black;
+}
+
+@media (max-width: 1024px) {
+    .appointment-card{
+        margin-top:55px;
+      } 
+    .appointment-card > .close {
+        right: 5px;
+        top: 60px;
+    }
+    .name_tag { 
+        transform: scale(0.6,0.6);
+        right: 80px;
+        top: 10px;
+        position: absolute;
+    }  
+}
+@media (max-width: 768px) {
+    .appointment-card{
+        margin-top:80px;
+      } 
+    .appointment-card > .close {
+        right: 5px;
+        top: 85px;
+    }
+    .name_tag { 
+        transform: scale(0.6,0.6);
+        right: 80px;
+        top: 10px;
+        position: absolute;
+    } 
+}
+
+@media (min-width: 1024px) {
+    .appointment-card{
+        width:250px;
+        right: 20px;
+        font-size:12px;
+        bottom: 10px;
+        position: absolute;
+      }
+      .appointment-card .appointment-card__message{
+        list-style: none;
+        display: grid;
+    }
+}
