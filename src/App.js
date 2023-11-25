@@ -8,7 +8,6 @@ import BookingConsultation from './Components/BookingConsultation';
 import Notification from './Components/Notification/Notification';
 import ReviewForm from './Components/ReviewForm/ReviewForm';
 import ReportsLayout from './Components/ReportsLayout/ReportsLayout';
-import InstantConsultation from './components/InstantConsultation/InstantConsultation'
 function App() {
   return (
     <div className="App">
@@ -22,7 +21,6 @@ function App() {
               <Route path="/Reviews" element={<ReviewForm/>}/>
               <Route path="/BookingConsultation" element={<BookingConsultation/>} />
               <Route path="/ReportsLayout" element={<ReportsLayout/>} />
-              <Route path="/instant-consultation" element={<InstantConsultation />} />
           </Routes>
             
         </BrowserRouter>
